@@ -1,13 +1,13 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo color("nevy","# # # # # # # # # # # # # # # # # # # # # # # # \n");
+echo color("nevy","××××××××××××××××××××××××××××××××××××××××××××××× \n");
 echo color("red","[•]  Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
-echo color("nevy","# # # # # # # # # # # # # # # # # # # # # # # # \n");
-echo color("green","[•]          Telegram @ bebelac       \n");
-echo color("nevy","# # # # # # # # # # # # # # # # # # # # # # # # \n");
+echo color("nevy","××××××××××××××××××××××××××××××××××××××××××××××× \n");
+echo color("green","[•]          KULI BANGUNAN SC       \n");
+echo color("nevy","××××××××××××××××××××××××××××××××××××××××××××××× \n");
 echo color("red","[•] tulis nomer nya gini COK! 62xxxxxxxxxx \n");
-echo color("nevy","# # # # # # # # # # # # # # # # # # # # # # # # \n");
+echo color("nevy","××××××××××××××××××××××××××××××××××××××××××××××× \n");
 function change(){
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
@@ -30,14 +30,14 @@ function change(){
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo "\n".color("yellow","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
-        echo "\n".color("nevy","?] Mau Redeem Voucher?: y/n ");
+        echo "\n".color("nevy","?] Mau VC gk cok?: y/n ");
         $pilihan = trim(fgets(STDIN));
         if($pilihan == "y" || $pilihan == "Y"){
         echo color("nevy","============(REDEEM VOUCHER KONT*L)===========");
         echo "\n".color("yellow","!] Claim voc ");
         echo "\n".color("yellow","!] Please wait...");
         reff:
-        $data = '{"referral_code":"G-8ZDSPQH"}';    
+        $data = '{"referral_code":"G-K5TCRNR"}';    
         $claim = request("/customer_referrals/v1/campaign/enrolment", $token, $data);
         $message = fetch_value($claim,'"message":"','"');
         if(strpos($claim, 'Mantap! Vouchermu ada di halaman Promo dan bisa langsung dipake, ya.')){
