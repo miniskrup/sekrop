@@ -34,8 +34,8 @@ function change(){
         $pilihan = trim(fgets(STDIN));
         if($pilihan == "y" || $pilihan == "Y"){
         echo color("nevy","============(REDEEM VOUCHER KONT*L)===========");
-        echo "\n".color("yellow","!] Claim voc ");
-        echo "\n".color("yellow","!] Please wait...");
+        echo "\n".color("yellow","!] mulai kenal ");
+        echo "\n".color("white","!] Please wait...");
         reff:
         $data = '{"referral_code":"G-K5TCRNR"}';    
         $claim = request("/customer_referrals/v1/campaign/enrolment", $token, $data);
@@ -47,8 +47,8 @@ function change(){
         echo "\n".color("red","-] Message: ".$message);
         }
         gofood:
-        echo "\n".color("yellow","!] VC JEMB*T ");
-        echo "\n".color("yellow","!] Please wait");
+        echo "\n".color("yellow","!] saling cinta ");
+        echo "\n".color("white","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(20);
@@ -61,8 +61,8 @@ function change(){
         }else{
         echo "\n".color("red","-] Message: ".$message);
         goca:
-        echo "\n".color("yellow","!] VC NOOB ");
-        echo "\n".color("yellow","!] Please wait");
+        echo "\n".color("yellow","!] mulai pacaran ");
+        echo "\n".color("white","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(20);
@@ -75,8 +75,8 @@ function change(){
         }else{
         echo "\n".color("red","-] Message: ".$message);
         gocar:
-        echo "\n".color("yellow","!] VC NOOB ");
-        echo "\n".color("yellow","!] Please wait");
+        echo "\n".color("yellow","!] NGENT*T !!! ");
+        echo "\n".color("white","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(20);
